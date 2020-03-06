@@ -1,0 +1,172 @@
+
+/* bonly.css里写了贯穿所有页面的样式 */
+
+html, body{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Microsoft Yahei';
+}
+
+a{
+    text-decoration: none;
+    color: #14F;
+    transition: color 0.6s;
+}
+
+a:hover{
+    color: #4AF;
+}
+
+header{
+    z-index: 999999;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: padding 0.4s, color 0.6s;
+}
+
+header a:hover{
+    color: #26F;
+}
+
+header .dividing-line{
+    width: 0px;
+    height: 26px;
+    border-right: 0.1px solid grey;
+}
+
+/************************************/
+
+#bg{
+    z-index: -99999;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#waiter-box{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#waiter{
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+#allBox{
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: calc(100% - 170px);
+    width: calc(100% - 320px);
+    min-width: 350px;
+    min-height: 260px;
+    z-index: 1;
+}
+
+#showMaster{
+    margin-top: -37px;
+    margin-left: 32px;
+    width: 100%;
+    height: 74px;
+    display: flex;
+}
+
+#avatar{
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(./img/avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid grey;
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+#showMasterText{
+    padding-left: 24px;
+}
+
+#name{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: #EEE 0px 0px 1px;
+    height: 37px;
+}
+
+#name p{
+    bottom: 0px;
+}
+
+#hitokoto{
+    color: #333;
+    font-size: 16px;
+    height: 37px;
+    overflow: hidden;
+}
+
+#content{
+    
+}
+
+@media screen and (max-width: 740px){
+    header a{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #warmafans1, #warmafans2{
+        display: none;
+    }
+}
+
+/**************************************/
+._eg_avatar_{
+    animation: rotate 0.5s ease-in-out infinite;
+}
+
+@keyframes{
+    from{
+        transition: rotate(0deg);
+    }
+    to{
+        transition: rotate(360deg);
+    }
+}
